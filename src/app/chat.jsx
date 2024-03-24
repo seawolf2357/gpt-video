@@ -362,27 +362,27 @@ export default function Chat() {
               className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
               onClick={stopRecording}
             >
-              Stop session
+              Stop
             </button>
           ) : (
             <button
               className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
               onClick={startRecording}
             >
-              Start session
+              Start
             </button>
           )}
           <button
             className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
             onClick={() => reload()}
           >
-            Regenerate
+            RE
           </button>
           <button
             className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
             onClick={() => setDisplayDebug((p) => !p)}
           >
-            Debug
+            Log
           </button>
           <input
             type="password"
@@ -394,7 +394,7 @@ export default function Chat() {
           <input
             className="px-4 py-2 bg-gray-700 rounded-md"
             value={lang}
-            placeholder="Optional language code"
+            placeholder="Language(ex. ko, jp, cn...)"
             onChange={(e) => setLang(e.target.value)}
           />
         </div>

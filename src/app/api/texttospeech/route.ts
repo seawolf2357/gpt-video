@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     model: "tts-1",
     voice: "alloy",
     input,
-    speed: 1.2,
+    speed: 1,
     response_format: "opus",
   });
 

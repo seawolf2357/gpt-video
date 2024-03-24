@@ -359,40 +359,40 @@ export default function Chat() {
         <div className="flex flex-wrap justify-center p-4 opacity-50 gap-2">
           {isStarted ? (
             <button
-              className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
+              className="px-4 py-2 bg-blue-700 rounded-md disabled:opacity-50"
               onClick={stopRecording}
             >
               Stop
             </button>
           ) : (
             <button
-              className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
+              className="px-4 py-2 bg-blue-700 rounded-md disabled:opacity-50"
               onClick={startRecording}
             >
               Start
             </button>
           )}
           <button
-            className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-blue-700 rounded-md disabled:opacity-50"
             onClick={() => reload()}
           >
             RE
           </button>
           <button
-            className="px-4 py-2 bg-gray-700 rounded-md disabled:opacity-50"
+            className="px-4 py-2 bg-blue-700 rounded-md disabled:opacity-50"
             onClick={() => setDisplayDebug((p) => !p)}
           >
             Log
           </button>
           <input
             type="password"
-            className="px-4 py-2 bg-gray-700 rounded-md"
+            className="px-4 py-2 bg-blue-700 rounded-md"
             value={token}
             placeholder="OpenAI API key"
             onChange={(e) => setToken(e.target.value)}
           />
           <input
-            className="px-4 py-2 bg-gray-700 rounded-md"
+            className="px-4 py-2 bg-blue-700 rounded-md"
             value={lang}
             placeholder="Language(ex. ko, jp, cn...)"
             onChange={(e) => setLang(e.target.value)}
